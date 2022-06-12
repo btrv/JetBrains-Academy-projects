@@ -84,12 +84,12 @@ function calculateCurrency() {
     let currencyCostFrom;
     let currencyCostTo;
     for (let cur in currencyList) {
-        if (cur == currencyNameFrom) {
+        if (cur === currencyNameFrom) {
             currencyCostFrom = currencyList[cur];
         }
     }
     for (let cur in currencyList) {
-        if (cur == currencyNameTo) {
+        if (cur === currencyNameTo) {
             currencyCostTo = currencyList[cur];
         }
     }
