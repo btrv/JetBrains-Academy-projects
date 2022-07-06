@@ -49,9 +49,11 @@
 
     <script>
         let saveButton = document.getElementById('save-text-file');
-        let paragraph = document.querySelector('textarea').value;
-        let myFilename = 'text.txt';
-        saveButton.addEventListener('click', () => download(myFilename, paragraph), false);
+         saveButton.addEventListener('click', () => {
+            let myFilename = 'text.txt';
+            let paragraph = document.querySelector('textarea').value;
+            download(myFilename, paragraph);
+        }, false);
 
         function download(filename, text) {
             let element = document.createElement('a');
