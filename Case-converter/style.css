@@ -1,0 +1,11 @@
+button{
+	margin: 10px;
+	padding: 10px;
+	color: floralwhite;
+	float: left;
+}
+
+textarea{
+	width: 40%;
+	height: 20vh;
+}
